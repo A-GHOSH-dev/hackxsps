@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>HackX</title>
+    <style>
+body {
+  margin: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #050505;
+}
+
+
+        .nav {
+  height: 50px;
+  width: 100%;
+  background-color: #050505;
+  position: relative;
+}
+ 
+.nav > .nav-header {
+  display: inline;
+}
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 0px 10px 10px 10px;
+}
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 16px;
+}
+.logo{
+    height: 60px;
+    width: 100px;
+}
+ 
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 20px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+ 
+.nav > .nav-links > a:hover {
+    
+  padding: 10px;
+    box-shadow: 0 0 0px rgb(230, 64, 174);
+  border-radius: 0px;
+  color: #050505;
+  background: linear-gradient(180deg, var(--c1, #8b045e), var(--c2, #e06cba) 51%, var(--c1, #f7f1f5)) var(--x, 0)/ 200%;
+}
+.nav > .nav-btn,
+.nav > #nav-check {
+  display: none;
+}
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 30px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: rgb(165, 7, 112);
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
+  .land{
+      height: 40%;
+      width: 60%;
+      }
+
+  
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            <img src="hackx logo2.png" alt="hackx logo" class="logo">
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="">About Us</a>
+          <a href="">Themes</a>
+          <a href="">Timeline</a>
+          
+          <a href="">Prizes</a>
+          <a href="">Sponsors</a>
+          
+          <a href="">Contacts</a>
+        </div>
+      </div>
+    
+
+
+
+      
+    <div class="landing">
+      <img class="land" alt="HackX" src="images/hackx logo.jpg">
+      <p>HackX</p>
+    </div>
+    
+
+
+</body>
+
+</html>
