@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    
 
     <title>HackX</title>
+
     <style>
 body {
   margin: 30px;
@@ -105,21 +107,62 @@ body {
     overflow-y: auto;
   }
 
-  .land{
-      height: 40%;
-      width: 60%;
-      }
+  
+  * {
+  box-sizing: border-box;
+}
 
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: top;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+</style>
   
 
-    </style>
+    
 </head>
 <body>
     <div class="nav">
         <input type="checkbox" id="nav-check">
         <div class="nav-header">
           <div class="nav-title">
-            <img src="hackx logo2.png" alt="hackx logo" class="logo">
+            <img src="images/hackx logo2.png" alt="hackx logo" class="logo">
           </div>
         </div>
         <div class="nav-btn">
@@ -144,14 +187,30 @@ body {
     
 
 
-
       
-    <div class="landing">
-      <img class="land" alt="HackX" src="images/hackx logo.jpg">
-      <p>HackX</p>
+  
+ 
+      
+  <section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+      <div class="sm:w-1/2 mb-10 px-1">
+        <div class="rounded-lg h-100 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full*1/2 w-full" src="images/hackx logo.jpg">
+        </div>
+        
+      </div>
+      <div class="sm:w-1/2 mb-10 px-4">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="images/1stpage.png">
+        </div>
+        <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">The Catalyzer</h2>
+        <p class="leading-relaxed text-base">Williamsburg occupy sustainable snackwave gochujang. Pinterest cornhole brunch, slow-carb neutra irony.</p>
+        <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
+      </div>
     </div>
-    
-
+  </div>
+</section>
 
 </body>
 
