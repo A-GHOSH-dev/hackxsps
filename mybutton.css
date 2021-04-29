@@ -172,7 +172,7 @@
   
 
   /*brochure*/
-  #testbutton3 {
+  #testbutton4 {
     width: 150px;
     height: 40px;
     border-radius:180px;
@@ -184,7 +184,7 @@
     line-height:12px;
   }
   
-  #testbutton3:before {
+  #testbutton4:before {
     content:'';
     z-index:1;
     position:absolute;

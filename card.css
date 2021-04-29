@@ -2,7 +2,7 @@
 .wrap {
 	position: relative;
 	margin: 0 auto;
-	width: 250px;
+	width: 300px;
 	height: 350px;
 	cursor: pointer;
 }
@@ -21,10 +21,10 @@
 	line-height: 350px;
 }
 .side-a {
-	background: #498FBC url('images/1.jpg');
+	background: #498FBC url('HACKX.gif');
 }
 .side-b {
-	background: #33363B url('images/11.jpg');
+	background: #33363B url('TO\ BE\ ANNOUNCED\ SOON.gif');
 }
 body {
 	-webkit-perspective: 800px;
@@ -50,3 +50,38 @@ body {
 .wrap:hover {
 	-webkit-transform: rotateY(180deg);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
