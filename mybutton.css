@@ -49,6 +49,15 @@
     background-color:rgb(3, 3, 3);
   }
   
+  #testbutton:hover:before {
+    
+    background-color:rgb(230, 31, 107);
+  }
+  #testbutton:hover:after{
+   color: rgb(192, 24, 127);
+   
+    background-color:rgb(247, 238, 238);
+  }
 
 
 
@@ -110,6 +119,15 @@
   
 
 
+  #testbutton2:hover:before {
+    
+    background-color:rgb(230, 31, 107);
+  }
+  #testbutton2:hover:after{
+   color: rgb(192, 24, 127);
+   
+    background-color:rgb(247, 238, 238);
+  }
 
 
 
