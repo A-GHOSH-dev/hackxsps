@@ -1,0 +1,50 @@
+.main {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+    height: 480px;
+  }
+   
+  
+  
+   
+  #countdown {
+    color: #F6F4F3;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    letter-spacing: 5px;
+    margin-top: 5%;
+  }
+   
+  .days, .hours, .minutes, .seconds, .left {
+    display: inline-block;
+    padding: 20px;
+    width: 220px;
+    border-radius: 10px;
+  }
+   
+  .days {
+    background: #D87200;
+  }
+   
+  .hours {
+    background:  #FF3E41;
+  }
+   
+  .minutes {
+    background: #FFB20C;
+  }
+   
+  .seconds {
+    background:  #2186FF;
+  }
+   
+  
+  .c-number {
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+    font-size: 5em;
+  }
