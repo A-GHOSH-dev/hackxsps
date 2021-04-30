@@ -1,3 +1,5 @@
+/*register now*/
+
 #testbutton {
     width: 150px;
     height: 40px;
@@ -60,7 +62,7 @@
   }
 
 
-
+/*----------------------------------------------------------------------*/
 
 /*discord*/
 
@@ -121,10 +123,10 @@
 
   #testbutton2:hover:before {
     
-    background-color:rgb(230, 31, 107);
+    background-color:rgb(34, 31, 230);
   }
   #testbutton2:hover:after{
-   color: rgb(192, 24, 127);
+   color: rgb(24, 27, 192);
    
     background-color:rgb(247, 238, 238);
   }
@@ -132,7 +134,7 @@
 
 
 
-
+/*-------------------------------------------------------*/
 
 
   /*website*/
@@ -171,7 +173,7 @@
   }
   
   #testbutton3:after {
-    content:'Join Our Discord';
+    content:'Our Website';
     text-align:center;
     line-height:35px;
     font-size:12px;
@@ -190,107 +192,30 @@
   
   #testbutton3:hover:before {
     
-    background-color:rgb(230, 31, 107);
+    background-color:rgb(48, 230, 31);
   }
   #testbutton3:hover:after{
-   color: rgb(192, 24, 127);
+   color: rgb(24, 192, 60);
    
     background-color:rgb(247, 238, 238);
   }
 
 
+/*-----------------------------------------------------------*/
 
 
 
 
-  #testbutton2 {
-    width: 150px;
-    height: 40px;
-    border-radius:180px;
-    position:relative;
-    
-    background: rgb(10, 117, 189);
-    cursor:pointer;
-    line-height:12px;
-  }
   
-  #testbutton2:before {
-    content:'';
-    z-index:1;
-    position:absolute;
-    display:block;
-    width:80%;
-    height:70%;
-    top:15%;
-    left:10%;
-    transition: 0.3s opacity ease-in-out;
-    filter:blur(15px);
-    opacity:0;
-    background: rgb(10, 117, 189);
-  }
-  
-  #testbutton2:hover:before {
-    opacity:1;
-    transition: 0.3s opacity ease-in-out;
-    filter:blur(45px);
-    background: rgb(6, 99, 206);  
-  }
-  
-  #testbutton2:after {
-    content:'Join Our Discord';
-    text-align:center;
-    line-height:35px;
-    font-size:12px;
-    color:rgba(235,235,235,1);
-    font-weight:bold;
-    z-index:5;
-    position:absolute;
-    display:block;
-    border-radius:180px;
-    width:92%;
-    height:80%;
-    top:10%;
-    left:4%;  
-    background-color:rgb(3, 3, 3);
-  }
-  
-
-
-  #testbutton2:hover:before {
-    
-    background-color:rgb(230, 31, 107);
-  }
-  #testbutton2:hover:after{
-   color: rgb(192, 24, 127);
-   
-    background-color:rgb(247, 238, 238);
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   /*brochure*/
+  
   #testbutton4 {
     width: 150px;
     height: 40px;
     border-radius:180px;
     position:relative;
-    left:calc(10% - 75px);
-    top:calc(5% - 25px);
-    background: rgb(10, 117, 189);
+    
+    background: rgb(133, 6, 150);
     cursor:pointer;
     line-height:12px;
   }
@@ -303,22 +228,22 @@
     width:80%;
     height:70%;
     top:15%;
-    left:10%;
+    left:40%;
     transition: 0.3s opacity ease-in-out;
     filter:blur(15px);
     opacity:0;
-    background: rgb(10, 117, 189);
+    background: rgb(133, 6, 150);
   }
   
-  #testbutton3:hover:before {
+  #testbutton4:hover:before {
     opacity:1;
     transition: 0.3s opacity ease-in-out;
     filter:blur(45px);
-    background: rgb(6, 99, 206);  
+    background: rgb(133, 6, 150);  
   }
   
-  #testbutton3:after {
-    content:'Website';
+  #testbutton4:after {
+    content:'Brochure 2021';
     text-align:center;
     line-height:35px;
     font-size:12px;
@@ -335,9 +260,12 @@
     background-color:rgb(3, 3, 3);
   }
   
-
-
-  
-  
-  
-  
+  #testbutton4:hover:before {
+    
+    background-color:rgb(133, 6, 150);
+  }
+  #testbutton4:hover:after{
+   color: rgb(133, 6, 150);
+   
+    background-color:rgb(247, 238, 238);
+  }
