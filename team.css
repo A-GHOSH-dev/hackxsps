@@ -1,0 +1,58 @@
+.column0 {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column0 {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .card0 {
+    box-shadow: 0 4px 8px 0 rgb(252, 249, 249);
+  }
+  
+  .container0 {
+    padding: 0 16px;
+  }
+  
+  .container0::after, .row0::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title0 {
+    color: rgb(252, 249, 249);
+    text-align: center;
+  }
+  
+  .button0 {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: rgb(230, 45, 137);
+    text-align: center;
+    cursor: pointer;
+    width: 60%;
+    margin-left: 70px;
+    margin-bottom: 40px;
+    
+  }
+  
+  .button0:hover {
+    background-color: rgb(250, 245, 245);
+    color: black;
+  }
+
+  .namess{
+      color: white;
+      text-align: center;
+      font-size: 30px;
+  }
