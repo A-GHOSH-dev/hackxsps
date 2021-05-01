@@ -76,11 +76,29 @@ body {
 .nav > .nav-links > a:hover {
     
   padding: 10px;
-    box-shadow: 0 0 0px rgb(230, 64, 174);
-  border-radius: 0px;
-  color: #050505;
-  background: linear-gradient(180deg, var(--c1, #8b045e), var(--c2, #e06cba) 51%, var(--c1, #f7f1f5)) var(--x, 0)/ 200%;
+    
+  
+  
+    animation: glow 1s ease-in-out infinite alternate;
+  color: #faa8d1;
+  /*background: linear-gradient(180deg, var(--c1, #8b045e), var(--c2, #e06cba) 51%, var(--c1, #f7f1f5)) var(--x, 0)/ 200%;*/
 }
+
+
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f08bbd, 0 0 40px #e48bb7, 0 0 50px #eb7eb4, 0 0 60px #f07db7, 0 0 70px #f07db7;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ec96c1, 0 0 40px #e986b7, 0 0 50px #df89b4, 0 0 60px #ca719e, 0 0 70px #f38cc0, 0 0 80px #ec6aab;
+  }
+}
+
+
+
+
 .nav > .nav-btn,
 .nav > #nav-check {
   display: none;
