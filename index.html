@@ -13,11 +13,12 @@
 <link href="team.css" rel="stylesheet">
 <link href="faq.css" rel="stylesheet">
 <!--<link href="judges.css" rel="stylesheet">-->
-
+<!--<link href="judges.css" rel="stylesheet">-->
+<link href="timer.css" rel="stylesheet">
 <!--<link href="slider.css" rel="stylesheet">-->
-<link href="function.js" rel="script">
+<link href="script.js" rel="script">
 
-
+<script src="jquerry.min.js"></script>
 
 
 
@@ -32,11 +33,11 @@
 
 
 
-body {
-  margin: 30px;
+html,body {
+  margin: 1%;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #050505;
-  
+  overflow-x: hidden;
 }
 
 
@@ -343,7 +344,18 @@ body {
 
 
 
-
+<div id="clock">
+        <div class="shaggy"><img src="Ajouter/circle.png" alt=" "></div>
+        <div class="shaggy"><img src="Ajouter/circle.png" alt=" "></div>
+        <div class="shaggy"><img src="Ajouter/circle.png" alt=" "></div>
+        <div class="shaggy"><img src="Ajouter/circle.png" alt=" "></div>
+    </div>
+ <div id="clock">
+       <span id="dys" class="oi"></span>
+              <span id="hrs" class="oi"></span>
+        <span id="mns" class="oi"></span>
+       <span id="sec" class="oi"></span>
+    </div>
 
 
 
