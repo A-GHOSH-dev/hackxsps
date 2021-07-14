@@ -4,25 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
     
+      
+<link href=" css/mybutton.css " rel="stylesheet">
+  
+<link href=" css/eventime.css " rel="stylesheet">
 
-<link href="mybutton.css" rel="stylesheet">
-<link href="card.css" rel="stylesheet">
-<link href="footer.css" rel="stylesheet">
-<link href="team.css" rel="stylesheet">
-<link href="faq.css" rel="stylesheet">
-<link href="events.css" rel="stylesheet">
+  
+<link href=" css/card.css " rel="stylesheet">
+  
+<link href=" css/footer.css " rel="stylesheet">
+  
+<link href=" css/team.css " rel="stylesheet">
+  
+<link href=" css/faq.css " rel="stylesheet">
+  
+<link href=" css/events.css " rel="stylesheet">
+  
 <!--<link href="judges.css" rel="stylesheet">-->
-<link href="timer.css" rel="stylesheet">
-<link href="mentor.css" rel="stylesheet">
+<link href=" css/timer.css " rel="stylesheet">
+  
+<link href=" css/mentor.css " rel="stylesheet">
 
 <!--<link href="slider.css" rel="stylesheet">-->
-<link href="script.js" rel="script">
+  
+
+<script src=" js/script.js "></script>
 
 
-<script src="jquerry.min.js"></script>
-<script src="scrolltotopbtn.js"></script>
+
 
 
 
@@ -256,32 +269,15 @@ html,body {
 <body>
 
 
-
-
-
-
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   
- 
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <div class="nav">
         <input type="checkbox" id="nav-check">
         <div class="nav-header">
           <div class="nav-title">
-            <img src="images/hackx logo2.png" alt="hackx logo" class="logo">
+              
+            <img src=" images/hackx logo2.png " alt="hackx logo" class="logo">
           </div>
         </div>
         <div class="nav-btn">
@@ -315,16 +311,18 @@ html,body {
     <div class="flex flex-wrap -mx-4 -mb-10 text-center">
       <div class="sm:w-1/2 mb-10 px-1">
         <div class="rounded-lg h-100 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full*1/2 w-full" src="images/hackx logo.jpg">
+            
+          <img alt="content" class="object-cover object-center h-full*1/2 w-full" src=" images/hackx logo.jpg ">
         </div>
         
       </div>
       <div class="sm:w-1/2 mb-10 px-1">
-        <div class="rounded-lg h-100 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full w-full" src="images/1stpage.png">
+        <div class="rounded-lg h-120 overflow-hidden">
+            
+          <img alt="content" class="object-cover object-center h-full w-full" src=" images/1stpage.png ">
         </div>
         
-        <button id="testbutton" class="flex mx-auto mt-6 text-white bg-black-500 border-solid border-5 border-pink-400 py-2 px-5 focus:outline-none hover:bg-pink-600 rounded-3xl">Register Now</button>
+        <a href="registration.html"><button id="testbutton" class="flex mx-auto mt-6 text-white bg-black-500 border-solid border-5 border-pink-400 py-2 px-5 focus:outline-none hover:bg-pink-600 rounded-3xl">Register Now</button></a>
         <button id="testbutton2" class="flex mx-auto mt-6 text-white bg-black-500 border-solid border-5 border-pink-400 py-2 px-5 focus:outline-none hover:bg-pink-600 rounded-3xl">Join our Discord</button>
       </div>
     </div>
@@ -339,29 +337,26 @@ html,body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-<div id="clock">
-        <div class="shaggy"><img src="Ajouter/circle.png" alt=" "></div>
-        <div class="shaggy"><img src="Ajouter/circle.png" alt=" "></div>
-        <div class="shaggy"><img src="Ajouter/circle.png" alt=" "></div>
-        <div class="shaggy"><img src="Ajouter/circle.png" alt=" "></div>
-    </div>
- 
-
-
-
-
-
+<div id="clockdiv"> 
+  <div> 
+    <span class="days" id="day"></span> 
+    <div class="smalltext">Days</div> 
+  </div> 
+  <div> 
+    <span class="hours" id="hour"></span> 
+    <div class="smalltext">Hours</div> 
+  </div> 
+  <div> 
+    <span class="minutes" id="minute"></span> 
+    <div class="smalltext">Minutes</div> 
+  </div> 
+  <div> 
+    <span class="seconds" id="second"></span> 
+    <div class="smalltext">Seconds</div> 
+  </div> 
+</div> 
+  
+<p font-size=7 id="demo"></p> 
 
 
 
@@ -375,10 +370,12 @@ html,body {
 
 
 <section class="text-gray-200 body-font">
-  <img id="about" class="container mx-auto flex px-5 py-1 items-center justify-center flex-col lg:w-2/6 md:w-3/6 w-5/6 mb-0 object-cover object-center rounded" alt="hero" src="abouthead.png">
+    
+  <img id="about" class="container mx-auto flex px-5 py-1 items-center justify-center flex-col lg:w-2/6 md:w-3/6 w-5/6 mb-0 object-cover object-center rounded" alt="hero" src=" images/abouthead.png ">
   <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-      <img class="object-cover object-center rounded" alt="hero" src="TO BE ANNOUNCED SOON.gif">
+        
+      <img class="object-cover object-center rounded" alt="hero" src=" images/TO BE ANNOUNCED SOON.gif ">
     </div>
     <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
       <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-200">About IEEE SPS VIT Vellore</h1>
@@ -430,11 +427,13 @@ progress in the scientific arena.</p>
       </div>
       
       <div class="flex lg:flex-row md:flex-col">
-        <a href="Brochure-IEEE SPS VIT.pdf"><button id="testbutton4" class="flex mx-auto mt-6 text-white bg-black-500 border-solid border-5 border-pink-400 py-2 px-5 focus:outline-none hover:bg-pink-600 rounded-3xl">Brochure</button></a>
+          
+        <a href=" images/Brochure-IEEE SPS VIT.pdf "><button id="testbutton4" class="flex mx-auto mt-6 text-white bg-black-500 border-solid border-5 border-pink-400 py-2 px-5 focus:outline-none hover:bg-pink-600 rounded-3xl">Brochure</button></a>
       </div>
     </div>
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-      <img class="object-cover object-center rounded" alt="hero" src="HACKX.gif">
+        
+      <img class="object-cover object-center rounded" alt="hero" src=" images/HACKX.gif ">
     </div>
   </div>
 </section>
@@ -445,808 +444,10 @@ progress in the scientific arena.</p>
 
 
 <div>
-
-<img id="themes" class="container mx-auto flex px-5 py-12 items-center justify-center flex-col lg:w-2/6 md:w-3/6 w-5/6 mb-0 object-cover object-center rounded" alt="hero" src="themehead.png">
-
-</div>
-
-
-
-
-
-
-
-
-
-<section class="text-gray-600 body-font">
-  <div class="container px-5 py-13 mx-auto">
-    <div class="flex flex-col">
-      
-    </div>
-    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-100 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full/2 w-full" src="webhead1.png">
-        </div>
-        
-      </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-100 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full/2 w-full" src="appdev1.png">
-        </div>
-        
-          
-      </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-100 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full/2 w-full" src="AIML.png">
-        </div>
-        
-          
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-<section class="text-gray-600 body-font">
-  <div class="container px-5 py-13 mx-auto ">
-    <div class="flex flex-col">
-      
-    </div>
-    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-100 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full/2 w-full" src="iot2.png">
-        </div>
-        
-      </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-100 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full/2 w-full" src="arvr1.png">
-        </div>
-       
-      </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-100 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full/2 w-full" src="blockchain.png">
-        </div>
-       
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-<section class="text-gray-600 body-font">
-  <div class="container mx-auto flex flex-col px-5 py-13 justify-center items-center mb-0 mb-6">
-    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-100 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full/2 w-full" src="robotics.png">
-        </div>
-        
-      </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-100 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full/2 w-full" src="cybersecurity.png">
-        </div>
-        
-      </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-100 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full/2 w-full" src="openinnovation.png">
-        </div>
-        
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div>
-
-<img id="timeline" class="container mx-auto flex px-5 py-10 items-center justify-center flex-col lg:w-2/6 md:w-3/6 w-5/6 mb-0 object-cover object-center rounded" alt="hero" src="timehead.png">
-
-</div>
-<section class="text-gray-600 body-font">
-  <div class="container mx-auto flex px-5 items-center justify-center flex-col">
-    <img class="lg:w-2/2 md:w-3/3 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="Yellow Green and Blue Futuristic Organization Process Timeline Infographic.png">
-    <div class="text-center lg:w-2/3 w-full">
-      
-      <div class="flex justify-center">
-        
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section>
-<div>
-
-<img id="events" class="container mx-auto flex px-5 py-10 items-center justify-center flex-col lg:w-2/6 md:w-3/6 w-5/6 mb-0 object-cover object-center rounded" alt="hero" src="speakerhead.png">
-</div>
-
-<section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-wrap -m-4">
-      <div class="p-4 md:w-1/3">
-        <div class="h-full rounded-lg overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog">
-          <div class="p-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
-            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            <div class="flex items-center flex-wrap ">
-              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>1.2K
-              </span>
-              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>6
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/721x401" alt="blog">
-          <div class="p-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
-            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            <div class="flex items-center flex-wrap">
-              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>1.2K
-              </span>
-              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>6
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/722x402" alt="blog">
-          <div class="p-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
-            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            <div class="flex items-center flex-wrap ">
-              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>1.2K
-              </span>
-              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>6
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog">
-          <div class="p-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
-            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            <div class="flex items-center flex-wrap ">
-              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>1.2K
-              </span>
-              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>6
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog">
-          <div class="p-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
-            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            <div class="flex items-center flex-wrap ">
-              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>1.2K
-              </span>
-              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>6
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog">
-          <div class="p-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
-            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            <div class="flex items-center flex-wrap ">
-              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>1.2K
-              </span>
-              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>6
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-  </div>
-</section>
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div>
-
-<img id="events" class="container mx-auto flex px-5 py-10 items-center justify-center flex-col lg:w-2/6 md:w-3/6 w-5/6 mb-0 object-cover object-center rounded" alt="hero" src="mentorhead.png">
-
-</div>
-
-  <section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-wrap -m-4">
-      <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog">
-          <div class="p-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
-            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            <div class="flex items-center flex-wrap ">
-              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>1.2K
-              </span>
-              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>6
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/721x401" alt="blog">
-          <div class="p-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
-            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            <div class="flex items-center flex-wrap">
-              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>1.2K
-              </span>
-              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>6
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/722x402" alt="blog">
-          <div class="p-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
-            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            <div class="flex items-center flex-wrap ">
-              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>1.2K
-              </span>
-              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>6
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/722x402" alt="blog">
-          <div class="p-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
-            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            <div class="flex items-center flex-wrap ">
-              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>1.2K
-              </span>
-              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>6
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/722x402" alt="blog">
-          <div class="p-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
-            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            <div class="flex items-center flex-wrap ">
-              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>1.2K
-              </span>
-              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>6
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/722x402" alt="blog">
-          <div class="p-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
-            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            <div class="flex items-center flex-wrap ">
-              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>1.2K
-              </span>
-              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>6
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-<div>
-
-<img id="events" class="container mx-auto flex px-5 py-10 items-center justify-center flex-col lg:w-2/6 md:w-3/6 w-5/6 mb-0 object-cover object-center rounded" alt="hero" src="eventshead.png">
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section class="text-gray-600 body-font">
-  <div class="container mx-auto flex px-5 items-center justify-center flex-col">
-    <img class="lg:w-2/2 md:w-3/4 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="events.gif">
-    <div class="text-center lg:w-2/3 w-full">
-      
-      <div class="flex justify-center">
-        
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-<div class="wrapperp">
-    <div class="boxp">
-        <div class="front-face">
-            <div class="icon">
-                <img src="" class="spslaptop"></div>
-            
-        </div>
-        <div class="back-face">
-            <span></span>
-            <p>
-                </p>
-        </div>
-    </div>
-    <div class="boxp">
-        <div class="front-face">
-            <div class="icon">
-                <img src="" class="spslaptop"></div>
-            
-        </div>
-        <div class="back-face">
-            <span></span>
-            <p>
-                </p>
-        </div>
-    </div>
-    <div class="boxp">
-        <div class="front-face">
-            <div class="icon">
-              <img src="" class="spslaptop"></div>
-            
-        </div>
-        <div class="back-face">
-            <span></span>
-            <p>
-                </p>
-        </div>
-    </div>
-    <div class="boxp">
-        <div class="front-face">
-            <div class="icon">
-              <img src="" class="spslaptop"></div>
-            
-        </div>
-        <div class="back-face">
-            <span></span>
-            <p>
-                </p>
-        </div>
-    </div>
-    <div class="boxp">
-        <div class="front-face">
-            <div class="icon">
-              <img src="" class="spslaptop"></div>
-            
-        </div>
-        <div class="back-face">
-            <span></span>
-            <p>
-                </p>
-        </div>
-    </div>
-    <div class="boxp">
-        <div class="front-face">
-            <div class="icon">
-              <img src="" class="spslaptop"></div>
-            
-        </div>
-        <div class="back-face">
-            <span></span>
-            <p>
-                </p>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div>
-
-<img id="prizes" class="container mx-auto flex px-5 py-12 items-center justify-center flex-col lg:w-2/6 md:w-3/6 w-5/6 mb-0 object-cover object-center rounded" alt="hero" src="prizehead1.png">
-
-</div>
-
-
-
-
-
-
-
-
-  <div class="container mx-auto flex px-5 py-13 items-center justify-center flex-col">
-    <img class="lg:w-2/3 md:w-3/6 w-5/6 mb-10 object-cover object-center w-full h-full rounded" alt="hero" src="Untitled design.gif">
     
-  </div>
+<img id="themes" class="container mx-auto flex px-5 py-12 items-center justify-center flex-col lg:w-2/6 md:w-3/6 w-5/6 mb-0 object-cover object-center rounded" alt="hero" src=" images/themehead.png ">
+
+</div>
 
 
 
@@ -1258,33 +459,262 @@ progress in the scientific arena.</p>
 
 
 
-  <section class="text-gray-600 body-font">
-  <div class="container px-5 py-13 mx-auto">
-    <div class="flex flex-col">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="pbody">
+      <div class="containerp">
+
+        <div class="cardp">
+          <div class="facep facep1">
+            <div class="contentp">
+              <span class="stars"></span>
+              
+              <p class="java">Infusing the digital processors in performing wide range of signal processing operations and analysis. Starting from audio or human speech processing to sonar and radar processing by practical DSP platforms.</p>
+            </div>
+          </div>
+          
+            <img src="images/webhead1.png" class="facep facep2"> 
+          
+        </div>
       
-    </div>
-    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-100 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full/2 w-full" src="prizeeee.png">
+
+
+
+        <div class="cardp">
+          <div class="facep facep1">
+            <div class="contentp">
+              <span class="stars"></span>
+             
+              <p class="java">Voice recognition, image processing and text recognition are being embedded into the AI for developing it into a sensible recognition tool, making it inch closer towards the humanoid we intend to make. These have a plethora of application in our day to day, for example, a live translator.</p>
+            </div>
+          </div>
+          
+            <img src="images/appdev1.png" class="facep facep2"> 
+          
         </div>
-        
-      </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-100 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full/2 w-full" src="prizeeee.png">
+
+
+
+
+        <div class="cardp">
+          <div class="facep facep1">
+            <div class="contentp">
+              <span class="stars"></span>
+              
+              <p class="java">Wearable technology, smartwear,skin electronics or fashion electronics are smart electronic devices that are worn close to and on the surface of the skin, where they detect, analyze, and transmit information concerning e.g. body signals such as vital signs, ambient data which allow in some cases immediate biofeedback to the wearer.</p>
+            </div>
+          </div>
+          
+            <img src="images/AIML.png" class="facep facep2"> 
+          
         </div>
-        
-      </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-100 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full/2 w-full" src="prizeeee.png">
+
+
+
+
+        <div class="cardp">
+          <div class="facep facep1">
+            <div class="contentp">
+              <span class="stars"></span>
+             
+              <p class="java">The Electronics industry has seen tremendous and exponential growth. With a focus on automobiles, consumer electronics, and mobile phones, this area has seen unprecedented innovation. Communication devices have become almost indispensable: whether it's Netflix or Skype.</p>
+            </div>
+          </div>
+          
+            <img src="images/iot2.png" class="facep facep2"> 
+          
         </div>
-        
+
+
+
+
+        <div class="cardp">
+          <div class="facep facep1">
+            <div class="contentp">
+              <span class="stars"></span>
+              
+              <p class="java">No longer does the object just relate to the process; it now connects to surrounding objects and database data, permitting “big data” analytics and insights. In particular, “things” might communicate autonomously with other things and other devices, such as sensors in manufacturing environments. 
+</p>
+            </div>
+          </div>
+          
+            <img src="images/arvr1.png" class="facep facep2"> 
+          
+        </div>
+
+
+
+
+        <div class="cardp">
+          <div class="facep facep1">
+            <div class="contentp">
+              <span class="stars"></span>
+              
+              <p class="java">There is an endless number of ideas that can be generated and implemented by understanding evolving technologies. Developing solutions for the problem statements and exercising your ideas without any restrictions since creativity knows no bounds.</p>
+            </div>
+          </div>
+          
+            <img src="images/blockchain.png" class="facep facep2"> 
+          
+        </div>
+
+
+
+
+
+
       </div>
-    </div>
-  </div>
+
+     
+   
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+<div>
+    
+<img id="timeline" class="container mx-auto flex px-5 py-10 items-center justify-center flex-col lg:w-2/6 md:w-3/6 w-5/6 mb-0 object-cover object-center rounded" alt="hero" src=" images/timehead.png ">
+
+</div>
+
+
+
+
+
 
 
 
@@ -1293,27 +723,12 @@ progress in the scientific arena.</p>
 
 
 <section class="text-gray-600 body-font">
-  <div class="container px-5 py-13 mx-auto">
-    <div class="flex flex-col">
+  <div class="container mx-auto flex px-5 items-center justify-center flex-col">
       
-    </div>
-    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-100 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full/2 w-full" src="prizeeee.png">
-        </div>
-        
-      </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-100 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full/2 w-full" src="prizeeee.png">
-        </div>
-        
-      </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-100 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full/2 w-full" src="prizeeee.png">
-        </div>
+    <img class="lg:w-2/2 md:w-3/4 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src=" images/To be announced!! (1).gif ">
+    <div class="text-center lg:w-2/3 w-full">
+      
+      <div class="flex justify-center">
         
       </div>
     </div>
@@ -1327,33 +742,6 @@ progress in the scientific arena.</p>
 
 
 
-<section class="text-gray-600 body-font">
-  <div class="container px-5 py-17 mx-auto">
-    <div class="flex flex-col">
-      
-    </div>
-    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-100 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full/2 w-full" src="prizeeee.png">
-        </div>
-        
-      </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-100 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full/2 w-full" src="prizeeee.png">
-        </div>
-        
-      </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-100 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full/2 w-full" src="prizeeee.png">
-        </div>
-        
-      </div>
-    </div>
-  </div>
-</section>
 
 
 
@@ -1361,14 +749,186 @@ progress in the scientific arena.</p>
 
 
 
-  
+
+
+
+
 
 
 
 
 <div>
+    
+<img id="events" class="container mx-auto flex px-5 py-10 items-center justify-center flex-col lg:w-2/4 md:w-3/5 w-5/5 mb-0 object-cover object-center rounded" alt="hero" src=" images/mentorhead.png ">
 
-<img id="sponsors" class="container mx-auto flex px-5 py-24 items-center justify-center flex-col lg:w-2/6 md:w-3/6 w-5/6 mb-0 object-cover object-center rounded" alt="hero" src="sponsorshead.png">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="text-gray-600 body-font">
+  <div class="container mx-auto flex px-5 items-center justify-center flex-col">
+      
+    <img class="lg:w-2/2 md:w-3/4 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src=" images/time.gif ">
+    <div class="text-center lg:w-2/3 w-full">
+      
+      <div class="flex justify-center">
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+    
+<img id="events" class="container mx-auto flex px-5 py-10 items-center justify-center flex-col lg:w-2/6 md:w-3/6 w-5/6 mb-0 object-cover object-center rounded" alt="hero" src=" images/eventshead.png ">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="text-gray-600 body-font">
+  <div class="container mx-auto flex px-5 items-center justify-center flex-col">
+      
+    <img class="lg:w-2/2 md:w-3/4 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src=" images/To be announced soon22.gif">
+    <div class="text-center lg:w-2/3 w-full">
+      
+      <div class="flex justify-center">
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+    
+<img id="prizes" class="container mx-auto flex px-5 py-12 items-center justify-center flex-col lg:w-2/6 md:w-3/6 w-5/6 mb-0 object-cover object-center rounded" alt="hero" src=" images/prizehead1.png ">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<section class="text-gray-600 body-font">
+  <div class="container mx-auto flex px-5 items-center justify-center flex-col">
+      
+    <img class="lg:w-2/2 md:w-3/4 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src=" images/prizesll.gif ">
+    <div class="text-center lg:w-2/3 w-full">
+      
+      <div class="flex justify-center">
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+    
+<img id="sponsors" class="container mx-auto flex px-5 py-24 items-center justify-center flex-col lg:w-2/6 md:w-3/6 w-5/6 mb-0 object-cover object-center rounded" alt="hero" src=" images/sponsorshead.png ">
 
 </div>
 
@@ -1376,7 +936,8 @@ progress in the scientific arena.</p>
 
 
 <div class="container mx-auto flex px-5 py-13 items-center justify-center flex-col">
-    <img class="lg:w-2/3 md:w-3/4 w-5/6 mb-10 object-cover object-center w-full h-full rounded" alt="hero" src="To be announced1.gif">
+    
+    <img class="lg:w-2/3 md:w-3/4 w-5/6 mb-10 object-cover object-center w-full h-full rounded" alt="hero" src=" images/To be announced1.gif ">
     
   </div>
 
@@ -1386,37 +947,6 @@ progress in the scientific arena.</p>
 
 
 
-  
-  <section class="text-gray-600 body-font">
-  <div class="container px-5 py-13 mx-auto">
-    <div class="flex flex-col">
-      
-    </div>
-    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-100 overflow-hidden">
-          <a href="">
-          <img alt="content" class="object-cover object-center h-full/2 w-full" src="sponsorbox.png"></a>
-        </div>
-        
-      </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-100 overflow-hidden">
-          <a href="">
-          <img alt="content" class="object-cover object-center h-full/2 w-full" src="sponsorbox.png"></a>
-        </div>
-        
-      </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-100 overflow-hidden">
-          <a href="">
-          <img alt="content" class="object-cover object-center h-full/2 w-full" src="sponsorbox.png"></a>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-</section>
 
 
 
@@ -1424,36 +954,6 @@ progress in the scientific arena.</p>
 
 
 
-<section class="text-gray-600 body-font">
-  <div class="container px-5 py-13 mx-auto">
-    <div class="flex flex-col">
-      
-    </div>
-    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-100 overflow-hidden">
-          <a href="">
-          <img alt="content" class="object-cover object-center h-full/2 w-full" src="sponsorbox.png"></a>
-        </div>
-        
-      </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-100 overflow-hidden">
-          <a href="">
-          <img alt="content" class="object-cover object-center h-full/2 w-full" src="sponsorbox.png"></a>
-        </div>
-        
-      </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-100 overflow-hidden">
-          <a href="">
-          <img alt="content" class="object-cover object-center h-full/2 w-full" src="sponsorbox.png"></a>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-</section>
 
 
 
@@ -1462,36 +962,6 @@ progress in the scientific arena.</p>
 
 
 
-<section class="text-gray-600 body-font">
-  <div class="container px-5 py-17 mx-auto">
-    <div class="flex flex-col">
-      
-    </div>
-    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-100 overflow-hidden">
-          <a href="">
-          <img alt="content" class="object-cover object-center h-full/2 w-full" src="sponsorbox.png"></a>
-        </div>
-        
-      </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-100 overflow-hidden">
-          <a href="">
-          <img alt="content" class="object-cover object-center h-full/2 w-full" src="sponsorbox.png"></a>
-        </div>
-        
-      </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-100 overflow-hidden">
-          <a href="">
-          <img alt="content" class="object-cover object-center h-full/2 w-full" src="sponsorbox.png"></a>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-</section>
 
 
 
@@ -1509,329 +979,7 @@ progress in the scientific arena.</p>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div>
-
-<img id="team" class="container mx-auto flex px-5 py-24 items-center justify-center flex-col lg:w-2/6 md:w-3/6 w-5/6 mb-0 object-cover object-center rounded" alt="hero" src="teamhead.png">
-
-</div>
-
-  
-
-
-  
-
-  <section class="text-pink-50 body-font">
-  <div class="container px-5 py-0 mx-auto">
-    
-    <div class="flex flex-wrap -m-4">
-      <div class="p-4 lg:w-1/2">
-        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-          <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="chair1.png">
-          <div class="flex-grow sm:pl-8">
-           
-            
-            <p class="mb-4">Kothakoli Sengupta (CHAIRPERSON, IEEE SPS VIT)</p>
-            <span class="inline-flex">
-              <a href="https://tailblocks.cc/" class="text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                </svg>
-             
-              <a class="ml-2 text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
-              </a>
-              <a class="ml-2 text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>
-              </a>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="p-4 lg:w-1/2">
-        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-          <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="vice3.png">
-          <div class="flex-grow sm:pl-8">
-            
-            
-            <p class="mb-4">Priya Dutta (VICE CHAIRPERSON, IEEE SPS VIT)</p>
-            <span class="inline-flex">
-              <a class="text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                </svg>
-              </a>
-              <a class="ml-2 text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
-              </a>
-              <a class="ml-2 text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>
-              </a>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="p-4 lg:w-1/2">
-        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-          <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="gensec1.png">
-          <div class="flex-grow sm:pl-8">
-           
-           
-            <p class="mb-4">Gyan Vallabh K (GENERAL SECTRETARY, IEEE SPS VIT)</p>
-            <span class="inline-flex">
-              <a class="text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                </svg>
-              </a>
-              <a class="ml-2 text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
-              </a>
-              <a class="ml-2 text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>
-              </a>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="p-4 lg:w-1/2">
-        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-          <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="tech head.png">
-          <div class="flex-grow sm:pl-8">
-           
-            
-            <p class="mb-4">Kasi Viswanathan A D (TECHNICAL HEAD, IEEE SPS VIT)</p>
-            <span class="inline-flex">
-              <a class="text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                </svg>
-              </a>
-              <a class="ml-2 text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
-              </a>
-              <a class="ml-2 text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>
-              </a>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="p-4 lg:w-1/2">
-        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-          <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="project1.png">
-          <div class="flex-grow sm:pl-8">
-            
-           
-            <p class="mb-4">Akshaya Nakhate (PROJECT HEAD, IEEE SPS VIT)</p>
-            <span class="inline-flex">
-              <a href="https://tailblocks.cc/" class="text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                </svg>
-             
-              <a class="ml-2 text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
-              </a>
-              <a class="ml-2 text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>
-              </a>
-            </span>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="p-4 lg:w-1/2">
-        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-          <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="event head.png">
-          <div class="flex-grow sm:pl-8">
-            
-           
-            <p class="mb-4">Syed Afroz W (EVENT AND PUBLICITY HEAD, IEEE SPS VIT)</p>
-            <span class="inline-flex">
-              <a class="text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                </svg>
-              </a>
-              <a class="ml-2 text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
-              </a>
-              <a class="ml-2 text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>
-              </a>
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <div class="p-4 lg:w-1/2">
-        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-          <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="design head.png">
-          <div class="flex-grow sm:pl-8">
-            
-            
-            <p class="mb-4">Jai Gupta ( DESIGN HEAD, IEEE SPS VIT Vellore )</p>
-            <span class="inline-flex">
-              <a class="text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                </svg>
-              </a>
-              <a class="ml-2 text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
-              </a>
-              <a class="ml-2 text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>
-              </a>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="p-4 lg:w-1/2">
-        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-          <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="sponsor head.png">
-          <div class="flex-grow sm:pl-8">
-            
-           
-            <p class="mb-4">Abhishek R (OUTREACH AND SPONSORSHIP HEAD, IEEE SPS VIT)</p>
-            <span class="inline-flex">
-              <a class="text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                </svg>
-              </a>
-              <a class="ml-2 text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
-              </a>
-              <a class="ml-2 text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>
-              </a>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="p-4 lg:w-1/2">
-        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-          <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="management head.png">
-          <div class="flex-grow sm:pl-8">
-            
-           
-            <p class="mb-4">Sheelavant N Sai Krishna (MANAGEMENT HEAD, IEEE SPS VIT)</p>
-            <span class="inline-flex">
-              <a class="text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                </svg>
-              </a>
-              <a class="ml-2 text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
-              </a>
-              <a class="ml-2 text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>
-              </a>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="p-4 lg:w-1/2">
-        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-          <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="doc head.png">
-          <div class="flex-grow sm:pl-8">
-            
-            
-            <p class="mb-4">Swapnil   Mishra ( DOCUMENTATION HEAD,  IEEE SPS VIT)</p>
-            <span class="inline-flex">
-              <a class="text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                </svg>
-              </a>
-              <a class="ml-2 text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
-              </a>
-              <a class="ml-2 text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>
-              </a>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<b>
 
 
 <section class="text-gray-600 body-font">
@@ -1840,91 +988,64 @@ progress in the scientific arena.</p>
    <p class="heading">FAQs</p>
    <div class="faqs">
       <details>
-         <summary>What is Lorem ipsum?</summary>
-         <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+         <summary>WHAT IS A HACKATHON?</summary>
+         <p class="text">A hackathon is best described as an “invention marathon”. Anyone who has an interest in technology attends a hackathon to learn, build & share their creations over the course of a weekend in a relaxed and welcoming atmosphere. You don’t have to be a programmer and you certainly don’t have to be majoring in Computer Science</p>
       </details>
       <details>
-         <summary>What is Lorem ipsum?</summary>
-         <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+         <summary>I JUST GRADUATED, CAN I STILL COME?</summary>
+         <p class="text">Yes. Anyone who has graduated a degree or currently studying  is eligible to participate in the hackathon. </p>
       </details>
       <details>
-         <summary>What is Lorem ipsum?</summary>
-         <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+         <summary>DO WE HAVE TO GO ANYWHERE TO ATTEND IT?</summary>
+         <p class="text">No, absolutely not. This is a Global Virtual Hackathon for Graduates and Undergraduates. </p>
       </details>
       <details>
-         <summary>What is Lorem ipsum?</summary>
-         <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+         <summary>WHY WOULD SOMEONE PARTICIPATE IN HACKX?</summary>
+         <p class="text">People participate in hackx for lots of reason: the challenge, the creative outlet, the community collaboration, the networking.</p>
       </details>
       <details>
-         <summary>What is Lorem ipsum?</summary>
-         <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+         <summary>WHO CAN PARTICIPATE? ARE THERE ANY PREREQUISITES OR REQUIRED SKILLS?</summary>
+         <p class="text">Anyone is welcome to participate in this event. While experience coding and programming is a huge plus, teams will also need people with strong presentation skills and brilliant ideas.</p>
       </details>
       <details>
-         <summary>What is Lorem ipsum?</summary>
-         <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+         <summary>WILL THERE BE TRAINING?</summary>
+         <p class="text">There is no pre-event training for hackx</p>
+      </details>
+      <details>
+         <summary>HOW MUCH DOES IT COST?</summary>
+         <p class="text">FREE. Free for spectators. Free for participants.</p>
+      </details>
+      <details>
+         <summary>WILL THERE BE PRIZES?</summary>
+         <p class="text">Absolutely. Check out our prize page for details.</p>
+      </details>
+      <details>
+         <summary>WHO WILL BE JUDGING?</summary>
+         <p class="text">The judge panel composition will be announced closer to the date of the hackx.</p>
+      </details>
+      <details>
+         <summary>WHERE DO I REGISTER?</summary>
+         <p class="text">Click on Register Now button present at top of this website and fill the form to register yourself. Do not forget to join our discord channel, as all further announcements will be made there. Stay Tuned!!</p>
+      </details>
+      <details>
+         <summary>DO I NEED A TEAM?</summary>
+         <p class="text">Yes, we do encourage team participants and we will help you team up as well. But yes, you can participate individually as well. Team Size: 1-4</p>
       </details>
    </div>
 </div>
-
+</b>
     <div class="text-center lg:w-2/3 w-full">
       <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-pink-500">Want to Sponsor Us?</h1>
       <h6 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-pink-50">We would love to have you onboard!!</h6>
       
       <div class="flex justify-center">
-        <button id="testbutton5" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-        <button id="testbutton6" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+        <a href=""><button id="testbutton5" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button></a>
+        <a href="images/Brochure-IEEE SPS VIT.pdf "><button id="testbutton6" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button></a>
         
       </div>
     </div>
   </div>
 </section>
-
-
-
-
-
-
-<section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto flex flex-wrap">
-    
-    <div class="flex flex-wrap md:-m-2 -m-1">
-      <div class="flex flex-wrap w-1/2">
-        <div class="md:p-2 p-1 w-1/2">
-          <img alt="gallery" class="w-full object-cover h-full object-center block" src="class.png">
-        </div>
-        <div class="md:p-2 p-1 w-1/2">
-          <img alt="gallery" class="w-full object-cover h-full object-center block" src="class2.png">
-        </div>
-        <div class="md:p-2 p-1 w-full">
-          <video class="w-full h-full object-cover object-center block" controls>
-      
-      <source src="spsintro.mp4" type=video/mp4>
-    </video>
-        </div>
-      </div>
-      <div class="flex flex-wrap w-1/2">
-        <div class="md:p-2 p-1 w-full">
-          <img alt="gallery" class="w-full h-full object-cover object-center block" src="spslaptop.gif">
-        </div>
-        <div class="md:p-2 p-1 w-1/2">
-          <img alt="gallery" class="w-full object-cover h-full object-center block" src="class1.png">
-        </div>
-        <div class="md:p-2 p-1 w-1/2">
-          <img alt="gallery" class="w-full object-cover h-full object-center block" src="class3.png">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1962,8 +1083,9 @@ progress in the scientific arena.</p>
   <footer id="contacts" class="footer-distributed">
  
  <div class="footer-left">
+    
  
- <img src="newlogo 2.png" class="imagess">
+ <img src=" images/newlogo 2.png " class="imagess">
  
  <p class="footer-links">
  <a href="#">Website</a>
